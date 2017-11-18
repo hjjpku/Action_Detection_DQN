@@ -1,8 +1,21 @@
-th Hjj_Training.lua -gpu [] -data_path ActivityNet -class [] -alpha [] -log_err ./log/training_error_[].log -log_log ./log/log[] -batch_size [] -replay_buffer [] -lr [] -epochs []
+# SAP: Self-Adaptive Proposal Model for Temporal Action Detection based on Reinforcement Learning
 
-th Hjj_Validate2.lua -data_path Thumos -class 4 -model_name ./New/g_1_23_fine -gpu 0 -alpha 0.2
+By Jingjia Huang, Nannan Li, Tao Zhang and Ge Li
 
+## Introduction
 
-CUDA_VISIBLE_DEVICES=0 th ./Hjj_Training12.lua -data_path Thumos -name a -alpha 0.2 -log_err log/traning_error_a -batch_size 200 -replay_buffer 2000 -lr 1e-4 -epochs 50 &> ./local.txt 
+Self-Adaptive Proposal (SAP) is a DQN based model for temporal action localization in untrimmed long videos. The temporal action detection process for SAP is naturally one of observation and refinement: observe the current window and refine the span of attended window to cover true action regions. SAP can learn to find actions through continuously adjusting the temporal bounds in a self-adaptive way.
 
-CUDA_VISIBLE_DEVICES=2 th Hjj_Training9.lua -gpu 0 -data_path Thumos -name h -class 9 -alpha 0.2 -log_err ./log/training_error_h -batch_size 200 -replay_buffer 2000 -lr 1e-2 -epochs 50 > ./log/logh
+![Image text](Action_Detection_DQN/img/example.png)
+
+This code has been tested on Ubuntu 16.04 with NVIDIA Tesla K80 of 12GB memory.
+
+## License
+
+SAP is released under the MIT License.
+
+## Citing
+
+If you find SAP useful, please consider citing:
+
+If you like this project, give us a :star: in the github banner :wink:.
