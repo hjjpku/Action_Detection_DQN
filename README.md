@@ -8,12 +8,13 @@ Self-Adaptive Proposal (SAP) is a DQN based model for temporal action localizati
 Experiment results on THUMOS’14 validate the effectiveness of SAP, which can achieve competitive performance with current action detection algorithms via much fewer proposals.
 
 ![Image text](https://github.com/hjjpku/Action_Detection_DQN/blob/master/img/framework.png)
-
+fig.1 SAP architecture
 
 ![Image text](https://github.com/hjjpku/Action_Detection_DQN/blob/master/img/action.png)
-
+fig.2 Illustration of DQN actions.Each yellow window with dashed lines represents the next window after taking the corresponding action.
 
 ![Image text](https://github.com/hjjpku/Action_Detection_DQN/blob/master/img/example.png)
+fig.3 Example of how SAP works
 
 This code has been tested on Ubuntu 16.04 with NVIDIA Tesla K80. The CUDA version is 8.0.61
 
