@@ -30,7 +30,7 @@ if not gt_file then
 	error("open gt file error")
 end
 
-local training_file = './' .. opt.data_path .. '/Thumos_trainlist_new.t7'
+local training_file = './' .. opt.data_path .. '/trainlist.t7'
 local clip_table = torch.load(training_file)
 local tt = clip_table[opt.class]
 if tt == nil then
@@ -38,8 +38,8 @@ if tt == nil then
 end
 
 -- read validate clips from files
-local validate_file = './' .. opt.data_path .. '/Thumos_validatelist_new.t7'
---local validate_file = './' .. opt.data_path .. '/Thumos_trainlist_1to19.t7'
+local validate_file = './' .. opt.data_path .. '/validatelist.t7'
+
 print(validate_file)
 local clip_table = torch.load(validate_file)
 local validate_clip_table = clip_table[opt.class]
