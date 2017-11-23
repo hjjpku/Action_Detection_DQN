@@ -52,4 +52,71 @@ If you like this project, give us a :star: in the github banner :wink:.
 
 ### Train your own model
 
+- If you want to train your own models on [Thumos'14](http://crcv.ucf.edu/THUMOS14/)
+
+  0. Preproceesing for Thumos dataset
+    Down-sample the videos for computing efficiency and save the videos as images. Considering the length of the groundtruth for different action categories varies a lot and the C3D needs an input longer than 16 frames, we down-sample the video of different categories to {1/3;1/3;1;1/2;1;1/3;1/3;1/3;1/3;1/2;1;1/2;1;1/3;1/3;1/3;1/3;1/3;1/3;1/3;1/2} of the original frame rate, respectively.
+ 
+  1. Construct the dataset directory structure as follow:
+   ```
+    .
+    ├── dataset          # put your datasets on the project folder and named it with dataset name
+    │   ├── class        # action class name (CleanAndJerk, BaseballPitch, HighJump...)
+    │        ├──    
+    │        │    ├── clip_idx             # index of videos
+    │        │    |   ├── frame_idx.jpg       # video images(from 1 to total sampled image number)
+    │        │    |   ...
+    │        │    |   ├── frame_idx.jpg
+    │        │    |   ├── FrameNum.txt        # total sampled image number
+    │        │    |   ├── gt.txt              # groundtruth interval
+    │        │    |   ├── NumOfGt.txt         # number of groundtruth in the clip
+    │        │    |   └── 
+    │        │    ...
+    │        │    ├── clip_idx 
+    │        │    ├── ClipNum.txt          # number of clips in this category
+    │        │    └── 
+    │        └── 
+    │   ├── class
+    |   ...
+    |   ├── class
+    |   ├── trainlist.t7
+    |   ├── validatelist.t7
+    └──
+    ```
+ 
+  2. Perepare the metadata and annotations for training and testing
+    * trainlist.t7 and Thumos_validatelis_new.t7 are the data which indicates the index of videos used for training or validation. It should be a table as follow:
+    ```
+    {
+      1 --class    
+      {
+         1 --clip_idx
+         ...
+      }
+      ...
+      21 --class
+      {
+        1 --clip_idx 
+        ...
+      }
+    }
+    ```
+    
+    * ClipNum.txt : a single number indicates the number of clips in this category
+    
+    * FrameNum.txt : a single number indicates the total sampled image number from the clip
+    
+    * NumOfGt.txt : a single number indicates the number of groundtruth segments in the clip
+    
+    * gt.txt records the index of first frame and last frame of the groundtruth.It should be arranged as follow:
+    ```
+    <begin_1> <end_1>
+    ...
+    <begin_n> <end_n>
+    ```
+  :wink: If you just want to try out our work and don't want to be bothered by this tedious work, you can download the dataset we have already processed [here]() . 
+    
+    
+    
+    
 
