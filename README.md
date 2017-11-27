@@ -117,7 +117,11 @@ If you like this project, give us a :star: in the github banner :wink:.
     <begin_n> <end_n>
     ```
   :wink: If you just want to try out our work and don't want to be bothered by this tedious work, you can download the dataset we have already processed [here]() . 
-    
+  
+    3. Run the code. For example:
+    `th ./Hjj_Training_SAP.lua -data_path Thumos -batch_size 200 -replay_buffer 2000 -lr 1e-3 -class 1` to train the SAP model for first action category in dadaset Thumos.
+    If you want to try more simple versions we used for ablation study(SAP w/o temporal pooling; SAP w/o temparal pooling w/o regression), run ./Hjj_Training_DQNRGN.lua or ./Hjj_Trianing_Dqn.lua instead.
+    For more details about the script arguments, please consult [Hjj_Read_Input_Cmd.lua] (https://github.com/hjjpku/Action_Detection_DQN/blob/master/Hjj_Read_Input_Cmd.lua)
     
     
     
