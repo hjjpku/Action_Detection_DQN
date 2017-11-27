@@ -37,7 +37,7 @@ if not log_file then
 end
 
 -- read training clip id from files
-local training_file = './' .. opt.data_path .. '/trainlist.t7'
+local training_file = './' .. opt.data_path .. '/Thumos_trainlist_new.t7'
 print(training_file)
 local clip_table = torch.load(training_file)
 local tt = clip_table[opt.class]
