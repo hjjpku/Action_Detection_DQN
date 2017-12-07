@@ -1,4 +1,4 @@
-# To be Updated
+# To be Updated for AAAI'18
 
 # SAP: Self-Adaptive Proposal Model for Temporal Action Detection based on Reinforcement Learning
 
