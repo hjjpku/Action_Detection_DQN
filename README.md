@@ -47,7 +47,7 @@ If you like this project, give us a :star: in the github banner :wink:.
 2. Download pre-trained fc models to our project folder from [BaiduYun]()
 
 ## What can you find?
-- [Pre-trained DQN models][BaiduYun](). We provide two version of DQN. One for the model w/ temporal pooling and another for the model w/o temporal pooling.
+- [Pre-trained DQN models][BaiduYun](https://pan.baidu.com/s/1mif4d6K). We provide two version of DQN for the first 4 category of actions. One for the model w/ temporal pooling and another for the model w/o temporal pooling.
 - [Pre-computed action proposals](). Take a look at our results if you are interested in comparisons or building cool algorithms on top of our outputs.
 
 ## What can you do with our code?
