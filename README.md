@@ -4,6 +4,8 @@
 
 By Jingjia Huang, Nannan Li, Tao Zhang and Ge Li
 
+The paper can be found [here](https://github.com/hjjpku/Action_Detection_DQN/blob/master/camera%20ready.pdf).
+
 ## Introduction
 
 Self-Adaptive Proposal (SAP) is a DQN based model for temporal action localization in untrimmed long videos. The temporal action detection process for SAP is naturally one of observation and refinement: observe the current window and refine the span of attended window to cover true action regions. SAP can learn to find actions through continuously adjusting the temporal bounds in a self-adaptive way.
