@@ -30,10 +30,13 @@ SAP is released under the MIT License.
 
 If you find SAP useful, please consider citing:
 ```
-@article{Huang2017A,
-  title={A Self-Adaptive Proposal Model for Temporal Action Detection based on Reinforcement Learning},
-  author={Huang, Jingjia and Li, Nannan and Zhang, Tao and Li, Ge},
-  year={2017},
+@paper{AAAI1816109,
+	author = {Jingjia Huang and Nannan Li and Tao Zhang and Ge Li and Tiejun Huang and Wen Gao},
+	title = {SAP: Self-Adaptive Proposal Model for Temporal Action Detection Based on Reinforcement Learning},
+	conference = {AAAI Conference on Artificial Intelligence},
+	year = {2018},
+	keywords = {Computer vision; Action detection; Reinforcement learning},
+	url = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16109}
 }
 ```
 
