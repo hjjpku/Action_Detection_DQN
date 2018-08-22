@@ -49,7 +49,7 @@ If you like this project, give us a :star: in the github banner :wink:.
 2. Download the pre-trained c3d v1.0 torch model from
     - https://github.com/wandering007/c3d_torch
     - Move the c3d model to our project folder and named it c3d.t7
-2. Download pre-trained fc models to our project folder from [BaiduYun]()
+2. Download pre-trained fc models to our project folder from [BaiduYun](https://pan.baidu.com/s/13_lyDbKm6XoVM1a5ZAzjXQ)
 
 ## What can you find?
 - [Pre-trained DQN models][BaiduYun](https://pan.baidu.com/s/1mif4d6K). We provide two version of DQN for the first 4 category of actions. One for the model w/ temporal pooling and another for the model w/o temporal pooling.
